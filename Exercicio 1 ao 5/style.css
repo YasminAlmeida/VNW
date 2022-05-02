@@ -1,0 +1,25 @@
+body{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+.js-tabmenu{
+  background-color: #b7b7b7;
+  padding: 10px;
+  border-radius: 4px;
+}
+.grid-left{
+  grid-column: 2;
+
+}
+.grid-left img{
+  width: 50%;
+}
+.upp{
+  display: grid;
+  grid-column: 2;
+}
+.grid-questions{
+  grid-template-columns: 1fr 1fr;
+
+}

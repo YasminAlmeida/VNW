@@ -1,0 +1,162 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  font-family: Arial,
+    Helvetica,
+    sans-serif,
+
+}
+
+body {
+  background-size: cover;
+  background-color: #e9edc9;
+
+}
+
+header {
+  padding: 2%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+header img {
+  margin-top: 50px;
+  max-width: 400px;
+  border-radius: 4px;
+  box-shadow: 0 0 10px 0 #37603F;
+}
+
+.quiz {
+  display: grid;
+  margin-top: 50px;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  text-align: center;
+}
+
+.quiz img {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  max-width: 300px;
+  border-radius: 4px;
+  box-shadow: 0 0 10px 0 #37603F;
+}
+
+.quiz h4 {
+  font-size: 1.5rem;
+  color: #37603F;
+}
+
+.css {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.lista {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* .neo {
+  width: 300px;
+  margin-top: 20px;
+  border: outset white;
+}
+
+img {
+  border-radius: 4px;
+}
+
+.glow {
+  font-size: 30px;
+  color: #fff;
+  text-align: center;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #10FB5F, 0 0 40px #10FB5F, 0 0 50px #10FB5F, 0 0 60px #10FB5F, 0 0 70px #10FB5F;
+  }
+
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #105928, 0 0 40px #105928, 0 0 50px #105928, 0 0 60px #105928, 0 0 70px #105928, 0 0 80px #105928;
+  }
+}
+
+h2 {
+  font-style: italic;
+  margin-top: 15px;
+  color: #245909;
+  text-shadow: 2px 1px #FFFFFF;
+}
+
+h4 {
+  color: #37603F;
+}
+
+p {
+  font-size: 10px;
+  margin-top: 10px;
+}
+
+.css img {
+  width: 77%;
+}
+
+.css {
+
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 7%;
+  margin-left: 2%;
+}
+
+.buzz {
+  font-size: 20px;
+  font-weight: bold;
+  margin-left: 20%;
+  margin-top: 6%;
+}
+
+.buzz img {
+  width: 44%;
+}
+
+.quiz {
+  display: flex;
+}
+
+.lista {
+  margin-top: 7%;
+  margin-left: 2%;
+
+}
+
+.lista ol {
+  font-weight: bold;
+}
+
+.da {
+  margin-top: 2%;
+}
+
+.foot {
+  margin-top: 4%;
+  margin-left: 2%;
+}
+
+.foot img {
+  margin-left: 30%;
+  width: 19%;
+} */

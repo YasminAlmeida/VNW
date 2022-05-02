@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./formulario.css" rel="stylesheet">
+  <title>Formulario</title>
+</head>
+
+<body>
+  <h1>Formulario</h1>
+  <form action="">
+    <div class="row">
+      <label class="required" for="Nome">Your Name:</label><br />
+      <input id="Nome" class="input" type="text" value="" size="20" />
+      <br />
+      <span class="error_message"></span>
+    </div>
+    <div class="row">
+      <label class="required" for="email">Your email:</label><br />
+      <input id="email" class="input" type="text" value="" size="30" />
+      <br />
+      <span id="email_validation" class="error_message"></span>
+    </div>
+    <div class="row">
+      <label class="required" for="subject">Subject:</label><br />
+      <input id="subject" class="input" type="text" value="" size="20" />
+      <br />
+    </div>
+    <div class="row message">
+      <span>Mensagem:</span>
+      <textarea class="message"></textarea>
+      </label>
+      <br />
+    </div>
+    <button value="Enviar">submit</button>
+  </form>
+</body>
+
+</html>

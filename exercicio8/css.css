@@ -1,0 +1,97 @@
+* {
+  list-style: none;
+}
+
+body {
+  color: #FFFFFF;
+  background-image: url("./img/the\ witcher\ hell.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  align-items: center;
+}
+
+header div,
+header {
+  align-items: center;
+  display: inline-flex;
+}
+
+header {
+  display: inline-flex;
+  justify-content: space-between;
+}
+
+header div h1 {
+  font-size: 1.8rem;
+  margin-left: 10px;
+}
+
+header div img {
+  width: 40px;
+  height: 70px;
+  margin-left: 20px;
+}
+
+nav {
+  font-size: 1.5rem;
+  display: inline-flex;
+  justify-content: space-between;
+}
+
+
+nav ul {
+  display: inline-flex;
+}
+
+nav ul li:hover {
+  background-color: #FFFFFF;
+  color: black;
+  border-radius: 4px;
+}
+
+.personagem {
+  margin-left: 600px;
+}
+
+
+.logo {
+  width: 50%;
+  margin-top: 1000px;
+}
+
+main {
+  display: inline-flex;
+  background-image: url("./img/the\ witcher\ kavil2.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 71vh;
+  justify-content: flex-end;
+  height: 100vh;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100vh;
+}
+
+button {
+  background: linear-gradient(180deg, #ec1418 0%, #a4161a 100%);
+  color: #FFFFFF;
+  height: 5vh;
+  width: 40vh;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  font-size: 1.5rem;
+  letter-spacing: 0.05rem;
+  border: transparent;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+main div {
+  display: inline-flex;
+  align-items: flex-end;
+  height: 100vh;
+  font-size: 1rem;
+}

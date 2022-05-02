@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./formulariostyle.css" rel="stylesheet">
+  <title>Document</title>
+</head>
+
+<body>
+  <main>
+    <h1>
+      Formulario <span>.</span>
+    </h1>
+    <form action="">
+      <div class="row">
+        <label class="required" for="Nome" class="subtitulo"> <b>Name<span>:</span></b></label><br />
+        <input id="Nome" class="input" type="text" value="" style="width: 300px;" size="20" />
+        <br />
+      </div>
+      <div class="row">
+        <label class="required" for="Email" class="subtitulo"> <b>Email<span>:</span></b></label><br />
+        <input id="Email" class="input" type="text" value="" style="width: 300px;" size="20" />
+        <br />
+      </div>
+      <div class="row">
+        <label class="required" for="Age" class="subtitulo"><b>Age<span>:</span></b> </label><br />
+        <input id="Age" class="input" type="number" style="width: 300px;" value="" />
+        <br />
+      </div>
+      <section class="size">
+        <h4 class="subtitulo"> Size Shirt<span>:</span></h4>
+        <div>
+          <input type="radio" name="size" id="size_1" value="small" />
+          <label for="size_1">Small (P)</label>
+        </div>
+        <div>
+          <input type="radio" name="size" id="size_2" value="medium" />
+          <label for="size_2">Medium (M)</label>
+        </div>
+        <div>
+          <input type="radio" name="size" id="size_3" value="large" />
+          <label for="size_3">Large (G)</label>
+        </div>
+      </section>
+      <section class="day">
+        <h4 class="subtitulo">Days for study<span>:</span></h4>
+        <div>
+          <label for="taste_1">Sunday</label>
+          <input type="checkbox" id="taste_1">
+        </div>
+        <div>
+          <label for="taste_2">Monday</label>
+          <input type="checkbox" id="taste_2">
+        </div>
+        <div>
+          <label for="taste_3">Tuesday</label>
+          <input type="checkbox" id="taste_3">
+        </div>
+        <div>
+          <label for="taste_4">Wednesday</label>
+          <input type="checkbox" id="taste_4">
+        </div>
+        <div>
+          <label for="taste_5">Thursday</label>
+          <input type="checkbox" id="taste_5">
+        </div>
+        <div>
+          <label for="taste_6">Friday</label>
+          <input type="checkbox" id="taste_6">
+        </div>
+        <div>
+          <label for="taste_7">Sunday</label>
+          <input type="checkbox" id="taste_7">
+        </div>
+      </section>
+      <button>Enviar</button>
+    </form>
+  </main>
+</body>
+
+</html>
