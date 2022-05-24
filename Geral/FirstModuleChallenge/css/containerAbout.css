@@ -1,0 +1,101 @@
+.about{
+  display: flex;
+  margin: 0;
+  background-image: url(../img/2/Background2Big.png);
+  justify-content: space-between;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: top;
+  flex-direction: column;
+  background-position: left;
+  position: absolute;
+  top: 65%;
+}
+.startPlay{
+  width: 100%; display: grid;
+  grid-template-columns:  1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  /* display: flex;
+  position: relative; */
+}
+.startPlayAbsolut{
+  color: #FFF;
+  height: 100%;
+  width: 100%;
+
+} 
+.download{
+  background-image: url(../img/2/startPlay.png);
+  background-repeat: no-repeat;
+  position: absolute;
+  background-size: cover;
+  width: 25%;
+  height: 40%;  
+  z-index: 100;
+  left: 10%;
+}
+.startPlayAbsolut button{
+  background-color: transparent;
+  color: #FFF;
+  border: solid 2px #FFF;
+   padding: 10px;
+  font-size: 2rem; 
+  border-radius: 4px;
+  opacity: 0.7;
+  margin-left: 8%;
+}
+.startPlayAbsolut button:hover{
+  background-color: black;
+  opacity: 1;
+  cursor: pointer;
+}
+.download h3{
+ font-size: 2.4rem; 
+  margin-bottom: 30px;
+  margin-left: 10%;
+  margin-top: 5%; 
+}
+.download p{
+ font-size: 2rem; 
+  opacity: 0.7;
+  margin-bottom: 50px;
+ width: 80%;
+  margin-left: 5%; 
+}
+.abouttheGame{
+  margin-top: 20%;
+  grid-column: 2;
+  grid-row: 1;
+}
+.mobile{
+  display: none;
+}
+.line{
+  margin-top: 50px;
+  margin-left: 15%;
+}
+.containerRight{
+  display: flex;
+  flex-direction: row;
+  margin-top: 50px;
+  justify-content: center;
+  align-items: center;
+}
+.structure{
+  text-align: right;
+}
+.structure h3{
+  font-size: 3rem;
+  margin-bottom: 10%;
+}
+.structure li{
+  margin-top: 5%;
+  cursor: pointer;
+  padding: 1px;
+}
+.structure li:hover{
+  background-color: #e76f51;
+}
+.structure a{
+  color: #000;
+}
