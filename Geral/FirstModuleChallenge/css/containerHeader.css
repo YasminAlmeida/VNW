@@ -70,7 +70,6 @@ header{
 }
 .containerCharacter{
   width: 100%;
-  z-index: 100;
   position: relative;
 }
 .containerCharacter img{ 
@@ -203,6 +202,9 @@ header{
   }
   .create span {
     font-size: 0.5rem;
+  }
+  .containerCharacter{
+    z-index: 2;
   }
 }
 @media(max-width:530px){
