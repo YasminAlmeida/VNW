@@ -5,41 +5,48 @@
   justify-content: space-between;
   background-repeat: no-repeat;
   background-size: contain;
-  background-position: top;
   flex-direction: column;
   background-position: left;
-  position: absolute;
-  top: 65%;
+  padding-top: 5%;
+  position: relative;
 }
 .startPlay{
-  width: 100%; display: grid;
+  display: grid;
   grid-template-columns:  1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  /* display: flex;
-  position: relative; */
 }
 .startPlayAbsolut{
-  color: #FFF;
-  height: 100%;
+  height: 0%;
+  position: absolute;
+  top: -2%;
   width: 100%;
-
 } 
-.download{
+.downloadMobile{
+  display: none;
+}
+.download,
+.downloadMobile{  
+  color: #FFF;
   background-image: url(../img/2/startPlay.png);
   background-repeat: no-repeat;
-  position: absolute;
   background-size: cover;
-  width: 25%;
-  height: 40%;  
-  z-index: 100;
-  left: 10%;
 }
-.startPlayAbsolut button{
+.download{  
+  position: absolute;
+  width: 20%;
+  z-index: 100;
+  left: 20%;
+  height: 500px;
+}
+button a{
+  color: #FFF;
+}
+.startPlayAbsolut button,
+.downloadMobile button{
   background-color: transparent;
   color: #FFF;
   border: solid 2px #FFF;
-   padding: 10px;
-  font-size: 2rem; 
+  padding: 3px;
+  font-size: 1.3rem; 
   border-radius: 4px;
   opacity: 0.7;
   margin-left: 8%;
@@ -49,23 +56,55 @@
   opacity: 1;
   cursor: pointer;
 }
-.download h3{
- font-size: 2.4rem; 
+.download h3,
+.downloadMobile h3{
+ font-size: 1.8rem; 
   margin-bottom: 30px;
   margin-left: 10%;
   margin-top: 5%; 
 }
-.download p{
- font-size: 2rem; 
+.download p,
+.downloadMobile p{
+ font-size: 1.3rem; 
   opacity: 0.7;
-  margin-bottom: 50px;
- width: 80%;
+  margin-bottom: 10px;
+  width: 80%;
   margin-left: 5%; 
 }
+.web{
+  display: flex;
+  flex-direction: row-reverse;
+}
+.abouttheGame img{
+  width: 40%;
+}
+.web div{
+  text-align: end;
+  margin-right: 2%;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+.web div h4{
+  font-size: 2rem;
+  margin-bottom: 5%;
+}
+.web div h4::after{
+  display: block;
+  margin-left: 60%;
+  content: "";
+  width: 40%;
+  height: 4px;
+  background-color: #000;
+  margin-top: 2%;
+}
+.web div p{
+  font-size: 0.97rem;
+}
 .abouttheGame{
+  grid-column: 2 / auto;
+  display: flex;
   margin-top: 20%;
-  grid-column: 2;
-  grid-row: 1;
 }
 .mobile{
   display: none;
@@ -75,8 +114,8 @@
   margin-left: 15%;
 }
 .containerRight{
-  display: flex;
-  flex-direction: row;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
   margin-top: 50px;
   justify-content: center;
   align-items: center;
@@ -98,4 +137,237 @@
 }
 .structure a{
   color: #000;
+  font-size: 1.4rem;
+}
+
+@media(max-width:2000px){
+  .line{
+    margin-top: 20%;
+  }
+}
+@media(max-width:1450px){
+  .abouttheGame{
+  margin-top: 0%;
+  }
+  .web div h4 {
+    font-size: 1.8rem;
+  }
+  .web div p {
+    font-size: 0.9rem;
+  }
+}
+@media(max-width:1350px){
+  .download h3{
+    font-size: 1.6rem;
+  }
+  .download p{
+    font-size: 1.2rem;
+  }
+   .download{
+    height: 350px;
+  }
+  .structure a{
+    font-size: 1.2rem;
+  }
+  .structure h3 {
+    font-size: 2.5rem;
+  }
+}
+@media(max-width:1120px){
+  .line{
+    margin-top: 13%;
+  }
+  .web div h4 {
+    font-size: 1.5rem;
+  }
+  .web div p {
+    font-size: 0.7rem;
+  }
+}
+@media(max-width:1000px) {
+  .startPlayAbsolut button {
+    font-size: 1.2rem;
+    padding: 2px;
+  }
+  .download p{
+    width: 90%;
+    font-size: 1rem;
+    padding-bottom: 10%;
+  }
+  .download h3{
+    font-size: 1.3rem;
+  }
+  .structure a{
+    font-size: 1.1rem;
+  }
+  .structure h3 {
+    font-size: 2.1rem;
+  }
+}
+@media(max-width:930px){
+  .download{
+    height: 310px;
+  }
+  .structure a{
+    font-size: 1.05rem;
+  }
+  .structure h3 {
+    font-size: 2rem;
+  }
+  .web div h4 {
+    font-size: 1.3rem;
+  }
+}
+@media(max-width:800px){
+  .download{
+    height: 280px;
+  }
+  .structure h3 {
+    font-size: 1.8rem;
+  }
+  .structure a{
+    font-size: 1rem;
+  }
+}
+@media(max-width:730px){
+  .download{
+    height: 240px;
+  }
+  .download p{
+    font-size: 0.88rem;
+    padding-bottom: 5%;
+  }
+  .download h3{
+    font-size: 1.1rem;
+  }
+  .startPlayAbsolut button {
+    font-size: 1rem;
+    padding: 1px;
+  }
+}
+@media(max-width:650px){
+  .download{
+    height: 210px;
+  }
+  .download p{
+    font-size: 0.7rem;
+  }
+  .download h3{
+    font-size: 1rem;
+    margin-bottom: 10%;
+  }
+  .startPlayAbsolut button {
+    font-size: 0.8rem;
+    padding: 0.5px;
+  }
+}
+@media(max-width:600px){
+  .startPlay {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: end
+  }
+  .abouttheGame {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    grid-row: 2;
+  }
+  .mobile{
+    display: flex;
+    width: 70% !important;
+    margin-top: 5%;
+  }
+  .download,
+  .web{
+    display: none;
+  }
+  .downloadMobile {
+    display: inline;
+    z-index: 0;
+    height: 280px;
+    width: 52% !important;
+    background-repeat: no-repeat;
+  }
+  .downloadMobile h3{
+    font-size: 1.3rem; 
+    margin-bottom: 10%; 
+  }
+  .downloadMobile p{
+    font-size: 1.1rem; 
+    margin-bottom: 10%;
+}
+  .startPlayAbsolut {
+    color: rgb(255, 255, 255);
+    height: 0%;
+    position: inherit;
+    top: 0%;    
+    display: flex;
+
+  }
+  .about{
+    position: static;
+    background-position: inherit;
+    box-shadow: inset 0 -750px white;
+  }
+  .structure h3 {
+    font-size: 1.5rem;
+  }
+  .structure li{
+    font-size: 0.8rem;
+  }
+}
+@media(max-width:480px){
+  .downloadMobile h3{
+    font-size: 1.2rem;  
+  }
+  .downloadMobile p{
+    font-size: 0.88rem; 
+  }
+  .downloadMobile button {
+    padding: 2px;
+    font-size: 1rem;
+  }
+  .downloadMobile {
+    height: 230px;
+  }
+  .structure h3 {
+    font-size: 1.1rem;
+  }
+  .structure li{
+    font-size: 0.6rem;
+  }
+}
+@media(max-width:390px){
+  .structure h3 {
+    font-size: 1rem;
+  }
+  .structure li{
+    font-size: 0.5rem;
+  }
+}
+@media(max-width:550px){
+  .about{
+  box-shadow: inset 0 -650px white;
+  }
+}
+@media(max-width:470px){
+  .downloadMobile{
+    margin-top: 10%;
+  }
+}
+@media(max-width:460px){
+  .about{
+  box-shadow: inset 0 -590px white;
+  }
+}
+@media(max-width:420px){
+  .about{
+  box-shadow: inset 0 -530px white;
+  }
+}
+@media(max-width:370px){
+  .about{
+  box-shadow: inset 0 -550px white;
+  }
 }

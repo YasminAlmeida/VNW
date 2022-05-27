@@ -1,0 +1,236 @@
+.attributes{
+  padding-top:5%;
+  background-color: #343a40;
+}
+.containerAttributes,
+.hierarchy{
+  margin: 0 100px;
+}
+.hierarchy{
+  display: flex;
+  flex-direction: column;
+  color: #FFF;
+  align-items: flex-end;
+}
+.attributes h2{
+  color: #FFF;
+  padding-bottom: 50PX;
+}
+.attributes h1{
+  color: #FFF;
+  font-size: 4rem;
+  margin: 0 30px;
+  margin-top: 10%;
+  text-align: center;
+  padding-bottom: 10%;
+}
+.containerImag{ 
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.imgRigth{
+  margin-left: 5px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1%;
+}
+.infoIntern,
+.infoIntern2{
+  margin: 0 10px;
+}
+.hierarchy img{
+  width: 100%;
+  margin-top: 50px;
+}
+.imgLeft{
+  position: relative;
+  background-image: url('../img/3/SectionpicturesLess.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  height: 500px;
+}
+.imgLeft1{
+  position: relative;
+  background-image: url('../img/3/Security_stormtrooper_HUC2-FF-003301@2x.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 50%;
+  margin-bottom: 2%;
+}
+.imgLeft2{
+  position: relative;
+  background-image: url('../img/3/SectionPictureRigthLess.png');
+  height: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.imgRight1{
+  position: relative;
+  background-image: url('../img/3/SectionPictureRigthBig.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 50%;
+  margin-bottom: 3%;
+}
+.imgRight2{
+  position: relative;
+  background-image: url('../img/3/stormtrupRightLess.png');
+  height: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.containerOpacity{
+  position: absolute;
+  color: #FFF;
+  height: 100%;
+  width: 100%;
+  background-color: #f07167;
+  opacity: 0;
+  cursor: pointer;
+}
+.containerOpacity:hover{
+  opacity: 0.8;
+}
+.infoIntern h1{
+  font-weight: bold;
+  font-size: 2rem;
+  margin-bottom: 5%;
+  margin-top: 10%;
+  margin-left: 10px;
+}
+.infoIntern p{
+  margin-left: 10px;
+  font-size: 1rem;
+  width: 90%;
+  margin-bottom: 5%;
+}
+.infoIntern a{
+  color: #FFF;
+  border: 2px solid #FFF;
+  border-radius: 4px;
+  padding: 10px; 
+  display: flex;
+  width: 30%;
+  justify-content: center;
+  margin-left: 10px;
+}
+.hierarchy p{
+  width: 50%;
+  font-size: 01em;
+}
+@media(max-width:1010px){
+  .infoIntern a{
+    padding: 5px; 
+    width: 50%;
+    margin-left: 10px;
+  }
+  .infoIntern h1{
+    font-size: 1.5rem;
+  }
+  .infoIntern p{
+    font-size: 0.9rem;
+  }
+}
+@media(max-width:1000px){
+  .imgLeft {
+    height: 400px;
+  }
+}
+@media(max-width:840px){
+  .imgLeft {
+    height: 350px;
+  }
+  .infoIntern h1{
+    font-size: 1.3rem;
+  }
+  .infoIntern p{
+    font-size: 0.8rem;
+  }
+}
+@media(max-width:760px){
+  .infoIntern h1{
+    font-size: 1.1rem;
+  }
+  .infoIntern p{
+    font-size: 0.78rem;
+  }
+  .infoIntern a{
+    padding: 2px; 
+    width: 50%;
+  }
+}
+@media(max-width:740px){
+  .infoIntern h1{
+    font-size: .95rem;
+    margin-bottom: 2%;
+    margin-top: 5%;
+  }
+  .infoIntern p{
+    font-size: 0.7rem;
+    margin-bottom: 4%;
+  }
+  .infoIntern a{
+    padding: 1px; 
+    width: 60%;
+  }
+}
+@media(max-width:670px){
+  .imgLeft {
+    height: 250px;
+  }
+}
+@media(max-width:640px){
+  .imgLeft {
+    height: 250px;
+  }
+}
+@media(max-width:600px){
+  .containerImag{       
+    grid-template-columns:1fr;
+  }
+  .imgRigth{
+    grid-template-columns: 1fr;
+    width: 100%;
+    margin-left: 0px;
+  }
+  .imgLeft{
+    height: 300px;
+  }
+  .imgLeft1,
+  .imgLeft2,
+  .imgRight1,
+  .imgRight2 {
+    height: 300px;
+  }
+  .hierarchy p{
+    width: 50%;
+    font-size: 0.5rem;
+  }
+  .infoIntern h1{
+    font-size: 2.5rem;
+    margin-bottom: 2%;
+    margin-top: 5%;
+  }
+  .infoIntern p{
+    font-size: 1.5rem;
+    margin-bottom: 4%;
+  }
+  .infoIntern a{
+    padding: 2px; 
+    width: 50%;
+  }
+}
+@media(max-width:370px){
+  .infoIntern h1{
+    font-size: 2.2rem;
+  }
+  .infoIntern p{
+    font-size: 1.4rem;
+  }
+}

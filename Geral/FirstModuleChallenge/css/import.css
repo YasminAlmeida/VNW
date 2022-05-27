@@ -1,5 +1,8 @@
 @import './containerHeader.css';
 @import './containerAbout.css';
+@import './containerAtributes.css';
+@import './containerDownload.css';
+@import './containerApplication.css';
 *{
   margin: 0;
   padding: 0;

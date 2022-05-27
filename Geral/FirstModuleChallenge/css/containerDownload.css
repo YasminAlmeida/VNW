@@ -1,0 +1,286 @@
+.containerDownload{
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.containerDownload img{
+  position: absolute;
+  width: 35%;
+  top: -70%;
+}
+.containerBoxDownload{
+  display: flex;
+  grid-column: 2;
+  align-items: center;
+  padding-top: 32%;
+  align-items: center;
+}
+.containerBoxDownloadInsideFirst,
+.containerBoxDownloadInsideSecond,
+.containerBoxDownloadInsideThird{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 60%;
+}
+.containerBoxDownload h1{
+  font-size: 4rem;
+  margin-bottom: 10%;
+  font-weight: normal;
+}
+.containerBoxDownloadInsideFirst:hover h1,
+.containerBoxDownloadInsideSecond:hover h1,
+.containerBoxDownloadInsideThird:hover h1{
+  font-weight: bold;
+}
+
+.containerBoxDownload a{
+  display: block;
+  width: 200px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 20px;
+  font-family: sans-serif;
+  text-decoration: none;
+  color: #000;
+  border: 2px solid #000;
+  letter-spacing: 2px;
+  text-align: center;
+  position: relative;
+  transition: all .3s;
+  background-color: #000;  
+  color: #fff;
+}
+.containerBoxDownload a span{
+  position: relative;
+  z-index: 2;
+}
+.containerBoxDownload a:after{  
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: #ff003b;
+  transition: all .35s;
+}
+.containerBoxDownload a:hover:after{
+  width: 100%;
+}
+a:hover:after{
+  width: 100%;
+}
+.containerBoxDownloadInsideSecond p,
+.containerBoxDownloadInsideThird p{
+  font-size: 1.2rem;
+  margin-top: 10%;
+  width: 30%;
+  text-align: center;
+}
+.containerBoxDownloadInsideFirst p{
+  font-size: 1.2rem;
+  margin-top: 10%;
+  width: 60%;
+  text-align: center;
+}
+.containerBoxDownloadInsideFirst p::after,
+.containerBoxDownloadInsideSecond p::after,
+.containerBoxDownloadInsideThird p::after{
+  content: "";
+  display: block;
+  margin-top: 10px;
+  width: 100%;
+  height: 4px;
+  background-color: #000;
+}
+.containerBoxDownloadInsideFirst:hover p::after,
+.containerBoxDownloadInsideSecond:hover p::after,
+.containerBoxDownloadInsideThird:hover p::after{
+  background: #ff003b;
+}
+@media(max-width:1833px){
+  .containerBoxDownloadInsideSecond p{
+    width: 40%;
+  }
+}
+@media(max-width:1449px){
+  .containerBoxDownloadInsideFirst p {
+    width: 80%;
+  }
+  .containerBoxDownload {
+    padding-top: 30%;
+  }
+}
+@media(max-width:1376px){
+  .containerBoxDownloadInsideThird p,
+  .containerBoxDownloadInsideSecond p{
+    width: 50%;
+  }
+  .containerBoxDownload {
+    padding-top: 28%;
+  }
+  .imgLeft h1 {
+    font-size: 3rem;
+  }
+  .imgLeft p {
+    font-size: 1.5rem;
+  }
+}
+@media(max-width:1275px){
+  .containerBoxDownload a {
+    width: 150px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 18px;
+  }
+  .attributes h1 {
+    font-size: 2.5rem;
+  }
+  .containerBoxDownloadInsideFirst p,
+  .containerBoxDownloadInsideSecond p,
+  .containerBoxDownloadInsideThird p {
+    margin-top: 3%;
+    font-size: 1.1rem;
+  }
+  .containerBoxDownloadInsideFirst h1,
+  .containerBoxDownloadInsideSecond h1,
+  .containerBoxDownloadInsideThird h1{
+    font-size: 2.5rem;
+  }
+  .hierarchy p {
+    font-size: 0.6em;
+  }
+}
+@media(max-width:1008px){
+  .containerBoxDownloadInsideThird p,
+  .containerBoxDownloadInsideSecond p{
+    width: 60%;
+  }
+  .containerBoxDownloadInsideFirst p {
+    width: 85%;
+    font-size: 0.9rem;
+  }
+  .containerBoxDownloadInsideSecond p,
+  .containerBoxDownloadInsideThird p {
+    font-size: 0.9rem;
+
+  }
+  .containerBoxDownload a {
+    width: 130px;
+    height: 20px;
+    line-height: 20px;
+    font-size: 15px;
+  }
+  .containerBoxDownloadInsideFirst h1,
+  .containerBoxDownloadInsideSecond h1,
+  .containerBoxDownloadInsideThird h1{
+    font-size: 2.1rem;
+  }
+}
+@media(max-width:830px){
+  .containerBoxDownloadInsideThird p,
+  .containerBoxDownloadInsideSecond p{
+    width: 60%;
+  }
+  .attributes h1 {
+    font-size: 2rem;
+  }
+  .containerBoxDownloadInsideFirst p {
+    width: 80%;
+    font-size: 0.7rem;
+  }
+  .containerBoxDownloadInsideSecond p,
+  .containerBoxDownloadInsideThird p {
+    font-size: 0.7rem;
+  }
+  .hierarchy p {
+    width: 80%;
+  }
+  .containerBoxDownload a {
+    width: 100px;
+    height: 15px;
+    line-height: 15px;
+    font-size: 0.7rem;
+  }
+  .containerBoxDownloadInsideFirst h1,
+  .containerBoxDownloadInsideSecond h1,
+  .containerBoxDownloadInsideThird h1{
+    font-size: 2rem;
+  }
+  .containerBoxDownloadInsideFirst p::after, .containerBoxDownloadInsideSecond p::after, .containerBoxDownloadInsideThird p::after {
+    margin-top: 5px;
+    height: 3px;
+  }
+}
+@media(max-width:680px){
+  .imgLeft h1 {
+    font-size: 1.8rem;
+  }
+  .imgLeft p {
+    font-size: 1.2rem;
+  }
+}
+@media(max-width:640px){
+  .containerBoxDownload {
+    display: flex;
+    flex-direction: column;
+    padding-top: 5%;
+  }
+  .containerDownload img {
+    position: absolute;
+    width: 65%;
+    top: -20%;
+    left: -20%;
+  }
+  .attributes h1 {
+    font-size: 1.6rem;
+  }
+  .attributes p {
+    font-size: 1.2rem;
+  }
+  .hierarchy p {
+    font-size: .5rem;
+    width: 90%;
+  }
+}
+@media(max-width:400px){
+  .attributes h1 {
+    font-size: 1.3rem;
+  }
+  .containerBoxDownloadInsideFirst h1,
+  .containerBoxDownloadInsideSecond h1,
+  .containerBoxDownloadInsideThird h1{
+    font-size: 1.6rem;
+    margin-bottom: 4%;
+  }
+  .containerBoxDownloadInsideFirst p {
+    width: 70%;
+    font-size: 0.6rem;
+  }
+  .containerBoxDownloadInsideSecond p,
+  .containerBoxDownloadInsideThird p {
+    font-size: 0.6rem;
+    width: 50%;
+  }
+  .containerBoxDownload a {
+    width: 80px;
+    height: 10px;
+    line-height: 10px;
+    font-size: 0.5rem;
+  }
+  .containerDownload img {
+    width: 60%;
+  }
+  .hierarchy p {
+    font-size: .4rem;
+  }
+}
+@media(max-width:322px){
+  .containerDownload img {
+    width: 70%;
+  }
+  .containerDownload{
+    padding-bottom: 50%;
+  }
+}
